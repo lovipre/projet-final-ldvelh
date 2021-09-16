@@ -1,0 +1,15 @@
+<div class="row">
+	<div class="col-9">
+		{% if chapters.image is not null %}
+			<img src="{{ asset( 'Image/' ~ chapters.image) }}" alt="chapters.image">
+		{% endif %}
+		<p>{{ chapters.content }}</p>
+		{% for out in outWays %}
+			<div class="text-center">
+				<a class="outWays btn btn-primary btn-lg active" href="{{ path('adventure', {'chapter': out }) }}" class="btn btn-primary btn-sm">{{ out }}</a>
+			</div>
+		{% endfor %}
+		{% if chapters.testLuck is not null and chapters.testLuck == 1 %}
+			<button class='testLuck btn btn-primary btn-sm text-center'>Test your luck</button>
+		{% endif %}
+	</div>

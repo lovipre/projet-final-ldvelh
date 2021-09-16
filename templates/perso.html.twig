@@ -1,0 +1,33 @@
+{% extends "base.html.twig" %}
+{% block title %}C'est la création du personnage
+{% endblock %}
+{% block body %}
+	<div class="container">
+
+		<h1>Habilité</h1>
+		<p>Jette un dé pour obtenir ton habilité</p>
+		<button class="ability btn btn-primary">Roll the dice</button>
+		<h1>Endurance</h1>
+		<p>Jette un dé pour obtenir ton endurance</p>
+		<button class="stamina btn btn-primary">Roll the dice</button>
+		<h1>Chance</h1>
+		<p>Jette un dé pour obtenir ta chance</p>
+		<button class="luck btn btn-primary">Roll the dice</button>
+		<h1>Choix de la potion</h1>
+		<p>Vous avez droit à une bouteille contenant une potion 
+																														magique qui vous aidera dans votre quête. Vous aurez à choisir entre 
+																														les trois potions suivantes : La Potion d'Adresse qui vous rend vos 
+																														points d'HABILETÉ. La Potion de Vigueur qui vous rend vos points 
+																														d'ENDURANCE. La Potion de Bonne Fortune qui vous rend vos points 
+																														de CHANCE en ajoutant 1 point à votre total de départ.</p>
+		<p>Laquel choissez-vous?</p>
+		<div class='potion'>
+			<button class="poability btn btn-primary" data-potion="a">Potion d'Adresse</button>
+			<button class="postamina btn btn-primary" data-potion="s">Potion de Vigueur</button>
+			<button class="poluck btn btn-primary" data-potion="l">Potion de Bonne Fortune</button>
+		</div>
+		<div class='boutonFin'></div>
+	</div>
+
+
+{% endblock %}

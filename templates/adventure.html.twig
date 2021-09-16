@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+{% block title %}C'est l'aventure
+{% endblock %}
+{% block body %}
+	<section class="container">
+		{% include 'fragments/_displaychapter.html.twig' %}
+		{% include 'fragments/_feuilleaventure.html.twig' %}
+	</section>
+{% endblock %}

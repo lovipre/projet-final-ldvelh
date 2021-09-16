@@ -1,0 +1,33 @@
+$body-bg: rgb(65, 62, 62);
+$body-color: rgb(255, 255, 255);
+$primary: #8b1515;
+h1 {
+  padding: 4% 0 2% 0;
+  font-size: 2rem;
+  border-bottom: 1px solid #797979;
+}
+img,
+.testLuck,
+.inscription,
+.connexion {
+  display: block !important;
+  margin: auto;
+}
+.inscription,
+.connexion {
+  margin: 1% auto !important;
+  text-align: center;
+}
+img {
+  margin-top: 5% !important;
+  width: 50%;
+}
+.affix {
+  top: 0;
+}
+.outWays {
+  margin: 3%;
+}
+footer {
+  margin-top: 5%;
+}
